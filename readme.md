@@ -87,6 +87,12 @@ It was an especially difficult challenge as I had to work with fastapi which i h
 
 ## Additional Notes
 
+## Further Improvements
+
+- Store the matrix in the database in an array form rather than a string
+- Improve the folder structure of the codebase
+- Proper documentation and better naming conventions
+
 ##### Sources:
 
 `NeetCode`
