@@ -1,0 +1,324 @@
+[
+    {
+        "label": "create_engine",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Boolean",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "ForeignKey",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "String",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Float",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "sessionmaker",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "declarative_base",
+        "importPath": "sqlalchemy.ext.declarative",
+        "description": "sqlalchemy.ext.declarative",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.ext.declarative",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Annotated",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_histogram",
+        "importPath": "utils",
+        "description": "utils",
+        "isExtraImport": true,
+        "detail": "utils",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "models",
+        "description": "models",
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "engine",
+        "importPath": "database",
+        "description": "database",
+        "isExtraImport": true,
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "SessionLocal",
+        "importPath": "database",
+        "description": "database",
+        "isExtraImport": true,
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "database",
+        "description": "database",
+        "isExtraImport": true,
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "DB_URL",
+        "kind": 5,
+        "importPath": "database",
+        "description": "database",
+        "peekOfCode": "DB_URL = 'postgresql://postgres:postgres@localhost:5432/MatrixDb'\nengine = create_engine(DB_URL)\nSessionLocal = sessionmaker(autocommit = False, autoflush = False, bind = engine)\nBase = declarative_base()",
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "engine",
+        "kind": 5,
+        "importPath": "database",
+        "description": "database",
+        "peekOfCode": "engine = create_engine(DB_URL)\nSessionLocal = sessionmaker(autocommit = False, autoflush = False, bind = engine)\nBase = declarative_base()",
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "SessionLocal",
+        "kind": 5,
+        "importPath": "database",
+        "description": "database",
+        "peekOfCode": "SessionLocal = sessionmaker(autocommit = False, autoflush = False, bind = engine)\nBase = declarative_base()",
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "kind": 5,
+        "importPath": "database",
+        "description": "database",
+        "peekOfCode": "Base = declarative_base()",
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "Matrix",
+        "kind": 6,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "class Matrix(BaseModel):\n    matrix: List[List[int]]\nclass OutputModel(BaseModel):\n    matrix: str\n    value: int\n    occurance: int\n    time_taken: float\ndef get_db():\n    db = SessionLocal()\n    try:",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "OutputModel",
+        "kind": 6,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "class OutputModel(BaseModel):\n    matrix: str\n    value: int\n    occurance: int\n    time_taken: float\ndef get_db():\n    db = SessionLocal()\n    try:\n        yield db\n    finally:",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "get_db",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def get_db():\n    db = SessionLocal()\n    try:\n        yield db\n    finally:\n        db.close()\ndb_dependency = Annotated[Session, Depends(get_db)]\n@app.post('/')\nasync def get_matrix_size(matrix: Matrix, db: db_dependency):\n    start_time: float = time.time() # Starting the timer",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "get_stats",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def get_stats(db:db_dependency):\n    results = db.query(models.Outputs).all()\n    return results\n@app.get(\"/{id}\")\ndef get_stats_by_id(id:int, db:db_dependency):\n    result = db.query(models.Outputs).filter(models.Outputs.id == id).first()\n    if not result:\n        raise HTTPException(status_code=404, detail=\"ID not found\")\n    return result\n# Logic to register output in the database",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "get_stats_by_id",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def get_stats_by_id(id:int, db:db_dependency):\n    result = db.query(models.Outputs).filter(models.Outputs.id == id).first()\n    if not result:\n        raise HTTPException(status_code=404, detail=\"ID not found\")\n    return result\n# Logic to register output in the database\ndef add_db(output: OutputModel, db: db_dependency):\n    db_output = models.Outputs(\n        matrix=output.matrix,   \n        value=output.value,",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "add_db",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def add_db(output: OutputModel, db: db_dependency):\n    db_output = models.Outputs(\n        matrix=output.matrix,   \n        value=output.value,\n        occurances=output.occurance,\n        time_taken=output.time_taken\n    )\n    db.add(db_output)\n    db.commit()\n    db.refresh(db_output)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "app = FastAPI()\nmodels.Base.metadata.create_all(bind=engine)\nclass Matrix(BaseModel):\n    matrix: List[List[int]]\nclass OutputModel(BaseModel):\n    matrix: str\n    value: int\n    occurance: int\n    time_taken: float\ndef get_db():",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "db_dependency",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "db_dependency = Annotated[Session, Depends(get_db)]\n@app.post('/')\nasync def get_matrix_size(matrix: Matrix, db: db_dependency):\n    start_time: float = time.time() # Starting the timer\n    rectangle: List[int, int] = calculate_histogram(matrix.matrix) \n    end_time: float = time.time()\n    total_time: float = round(end_time - start_time, 3) * 10000 # Ending the timer and converting to microseconds\n    data = {\"matrix\": str(matrix.matrix), \"value\": rectangle[0], \"occurance\": rectangle[1], \"time_taken\": total_time}\n    output_model = OutputModel(**data) \n    add_db(output_model, db)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "Outputs",
+        "kind": 6,
+        "importPath": "models",
+        "description": "models",
+        "peekOfCode": "class Outputs(Base):\n    __tablename__ = 'outputs'\n    id = Column(Integer, primary_key=True, index = True)\n    matrix = Column(String, index = True)\n    value = Column(Integer, index = True)\n    occurances = Column(Integer, index = True)\n    time_taken = Column(Float, index = True)",
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_max_rectangle",
+        "kind": 2,
+        "importPath": "utils",
+        "description": "utils",
+        "peekOfCode": "def calculate_max_rectangle(array):\n    #used finding the biggest rectangle in a histogram's logic \n    stack = []\n    max_area = 0\n    for width, height in enumerate(array):\n        start = width\n        while stack and (stack[-1][1] > height):\n            prev_start, prev_height = stack.pop()\n            prev_width = width - prev_start\n            if(prev_height == prev_width): # since the height and width cannot be equal",
+        "detail": "utils",
+        "documentation": {}
+    },
+    {
+        "label": "chose_hist",
+        "kind": 2,
+        "importPath": "utils",
+        "description": "utils",
+        "peekOfCode": "def chose_hist(hist_array):  #this parses the hist_array i generated\n    max_rect = [0,float('-inf')]\n    histogram = []\n    hash_array = list(hist_array)\n    hash_array.append(\"x\")\n    for index in range(len(hash_array)-1):\n        curr_val = hash_array[index][0]\n        next_val = hash_array[index+1][0]\n        if curr_val != next_val:\n            histogram.append(hash_array[index][1])",
+        "detail": "utils",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_histogram",
+        "kind": 2,
+        "importPath": "utils",
+        "description": "utils",
+        "peekOfCode": "def calculate_histogram(matrix):\n    hist_array = []\n    max_rectangle = [0,0]\n    for array in matrix:\n        for index in range(len(array)):\n            if len(hist_array) == index:\n                hist_array.append([array[index],1])\n            elif hist_array[index][0] ==  array[index]:\n                hist_array[index][1] += 1\n            elif hist_array[index][0] !=  array[index]:",
+        "detail": "utils",
+        "documentation": {}
+    }
+]
