@@ -182,7 +182,7 @@
         "kind": 5,
         "importPath": "database",
         "description": "database",
-        "peekOfCode": "DB_URL = 'postgres://soham:uZWbPEXO9zghLvtSxTJlxyzYGhfvKLZh@dpg-cmkapbf109ks739kki80-a/matrixdb'\nengine = create_engine(DB_URL)\nSessionLocal = sessionmaker(autocommit = False, autoflush = False, bind = engine)\nBase = declarative_base()",
+        "peekOfCode": "DB_URL = 'postgresql://soham:uZWbPEXO9zghLvtSxTJlxyzYGhfvKLZh@dpg-cmkapbf109ks739kki80-a.singapore-postgres.render.com/matrixdb'\nengine = create_engine(DB_URL)\nSessionLocal = sessionmaker(autocommit = False, autoflush = False, bind = engine)\nBase = declarative_base()",
         "detail": "database",
         "documentation": {}
     },
